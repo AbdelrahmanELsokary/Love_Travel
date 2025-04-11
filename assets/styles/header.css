@@ -1,7 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+:root {
+  --black: #000;
+  --white: #fff;
+  --icons: #3b5454;
+  --hover-border: #000;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -25,6 +31,99 @@ body {
     width: 1170px;
   }
 }
-a{
+ul {
+  list-style: none;
+}
+a {
   text-decoration: none;
+}
+i {
+  cursor: pointer;
+  font-size: 25px;
+  color: var(--icons);
+  margin-left: 10px;
+}
+body.dark-mode {
+  background-color: var(--black);
+  transition: 0.5s;
+  --hover-border: #fff;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 25px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .container .logo img {
+  width: 150px;
+}
+header .container nav a {
+  color: var(--black);
+}
+@media (max-width:991px) {
+  header .container nav ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    min-width: 200px;
+    background-color: var(--white);
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  body.dark-mode header .container nav ul {
+    background-color: var(--black);
+    color: var(--icons);
+    transition: 0.5s;
+  }
+  body.dark-mode header .container nav ul li a {
+    color: var(--white);
+  }
+  header .container nav ul.open_drop_down {
+    display: block;
+  }
+  header .container nav ul li {
+    padding: 7px 0 7px 8px;
+  }
+  header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid;
+  }
+}
+@media (min-width:992px) {
+  header .container nav,
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+  header .container nav i:not(:last-child) {
+    display: none;
+  }
+  body.dark-mode header .container nav ul li a {
+    color: var(--white);
+  }
+  header .container nav ul li a {
+    position: relative;
+  }
+  header .container nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--black);
+    transition:  0.3s ;
+  }
+  header .container nav ul li a:hover::before {
+    width: 100%;
+  }
+  
+header .container nav ul li a::before {
+  background-color: var(--hover-border);
+}
 }
