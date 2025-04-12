@@ -3,8 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
+}
+:root {
+  --white: #fff;
+  --black: #000;
+  --bg: #E3F0FF;
+  --text-color: #4285F4;
+  --text-color2: #737373;
+
 }
 .container {
   padding: 0 15px;
@@ -25,6 +36,79 @@ body {
     width: 1170px;
   }
 }
-a{
+a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body.dark-mode .hero ,
+body.dark-mode .hero .container .col1 .how_it_work .discover a {
+  background-color: var(--black);
+  color: var(--bg);
+  transition: 0.5s;
+}
+.hero {
+  background-color: var(--bg);
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 85px);
+  background-image: url(/assets/images/Background.webp);
+  background-size: cover;
+}
+.hero .container .col1 h1 {
+  font-size: 60px;
+  color: var(--text-color);
+  line-height: 76px;
+}
+.hero .container .col1 h1 span {
+  font-weight: normal;
+}
+.hero .container .col1 p {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--text-color2);
+  padding: 25px 0;
+}
+.hero .container .col1 .how_it_work {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero .container .col1 .how_it_work .discover a {
+  font-weight: bold;
+  color: var(--black);
+  border: 1px solid var(--text-color2);
+  border-radius: 20px;
+  padding: 9px 15px;
+}
+.hero .container .col1 .how_it_work .play a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.hero .container .col1 .how_it_work .play a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--text-color);
+  color: var(--white);
+  border-radius: 50%;
+}
+.hero .container .col2 {
+  height: 100%;
+  padding-top: 95px;
+}
+@media (max-width:991px) {
+  .hero .container .col2 {
+    display: none;
+  }
 }

@@ -43,7 +43,8 @@ i {
   color: var(--icons);
   margin-left: 10px;
 }
-body.dark-mode {
+body.dark-mode ,
+body.dark-mode header {
   background-color: var(--black);
   transition: 0.5s;
   --hover-border: #fff;
@@ -51,7 +52,9 @@ body.dark-mode {
 header {
   position: sticky;
   top: 0;
-  padding: 25px 0;
+  background-color: var(--white);
+  z-index: 10;
+  padding: 20px 0;
 }
 header .container {
   display: flex;
