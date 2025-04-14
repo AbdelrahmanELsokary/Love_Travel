@@ -1,56 +1,68 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --white: #fff;
   --black: #000;
   --bg: #E3F0FF;
   --text-color: #4285F4;
+  --text-color1: #181D4E;
   --text-color2: #737373;
-
 }
+
 .container {
   padding: 0 15px;
   margin: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
 }
-body.dark-mode .hero ,
+
+body.dark-mode .hero,
 body.dark-mode .hero .container .col1 .how_it_work .discover a {
   background-color: var(--black);
   color: var(--bg);
   transition: 0.5s;
 }
+
 .hero {
   background-color: var(--bg);
 }
+
 .hero .container {
   display: flex;
   justify-content: center;
@@ -59,25 +71,30 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   background-image: url(/assets/images/Background.webp);
   background-size: cover;
 }
+
 .hero .container .col1 h1 {
   font-size: 60px;
   color: var(--text-color);
   line-height: 76px;
 }
+
 .hero .container .col1 h1 span {
   font-weight: normal;
 }
+
 .hero .container .col1 p {
   font-size: 19px;
   font-weight: 500;
   color: var(--text-color2);
   padding: 25px 0;
 }
+
 .hero .container .col1 .how_it_work {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .hero .container .col1 .how_it_work .discover a {
   font-weight: bold;
   color: var(--black);
@@ -85,6 +102,7 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   border-radius: 20px;
   padding: 9px 15px;
 }
+
 .hero .container .col1 .how_it_work .play a {
   display: flex;
   align-items: center;
@@ -92,6 +110,7 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   font-weight: bold;
   color: var(--text-color);
 }
+
 .hero .container .col1 .how_it_work .play a i {
   display: flex;
   justify-content: center;
@@ -103,12 +122,157 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   color: var(--white);
   border-radius: 50%;
 }
+
 .hero .container .col2 {
   height: 100%;
   padding-top: 95px;
 }
+
 @media (max-width:991px) {
   .hero .container .col2 {
     display: none;
   }
+}
+
+.plan .container {
+  padding-top: 100px;
+}
+
+.plan .container span {
+  font-size: 29px;
+  font-family: "Reenie Beanie", cursive;
+  color: var(--text-color);
+}
+
+.plan .container h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--text-color1);
+  line-height: 60px;
+  padding: 20px 0;
+}
+
+.plan .container p {
+  color: var(--text-color2);
+  line-height: 24px;
+}
+
+.plan .container a {
+  display: block;
+  background-color: var(--text-color);
+  color: var(--white);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 20px 0;
+}
+
+.electric_bikes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 60px 0;
+}
+
+.electric_bikes img {
+  max-width: 365px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+.cards i {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.cards .card {
+  max-width: 365px;
+  background-color: var(--white);
+  box-shadow: 0 0 9px 1px var(--text-color2);
+  border-radius: 17px;
+}
+
+.cards .card .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0 0 7px 1px var(--text-color2);
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.cards .card .date .time,
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards .card .date .time span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards .card .name_of_town {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color1);
+  padding: 10px 0 0 20px;
+}
+
+.cards .card .location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0 0 10px;
+}
+
+.cards .card p {
+  color: var(--text-color2);
+  padding: 30px 0 30px 20px;
+}
+
+.cards .card hr {
+  width: 90%;
+  margin: 25px auto 0 auto;
+}
+
+.cards .card .hr {
+  margin: 0 auto;
+}
+
+.cards .card .details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto 20px auto;
+}
+
+.cards .card .details span {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: var(--text-color1);
+}
+
+.cards .card .details .from {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--text-color2);
 }

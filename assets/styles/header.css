@@ -7,6 +7,7 @@
   --black: #000;
   --white: #fff;
   --icons: #3b5454;
+  --bg-darck-header: #161c1c;
   --hover-border: #000;
 }
 body {
@@ -48,6 +49,9 @@ body.dark-mode header {
   background-color: var(--black);
   transition: 0.5s;
   --hover-border: #fff;
+}
+body.dark-mode header {
+  background-color: var(--bg-darck-header);
 }
 header {
   position: sticky;
