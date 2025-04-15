@@ -9,15 +9,15 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
   --white: #fff;
   --black: #000;
-  --bg: #E3F0FF;
-  --text-color: #4285F4;
-  --text-color1: #181D4E;
+  --bg: #e3f0ff;
+  --text-color: #4285f4;
+  --text-color1: #181d4e;
   --text-color2: #737373;
 }
 
@@ -51,9 +51,26 @@ a {
 img {
   max-width: 100%;
 }
-
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: block;
+  background-color: var(--text-color);
+  color: var(--white);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 20px 0;
+}
 body.dark-mode .hero,
-body.dark-mode .hero .container .col1 .how_it_work .discover a {
+body.dark-mode .hero .container .col1 .how_it_work .discover a,
+body.dark-mode .cards .card,
+body.dark-mode .cards .card .date,
+body.dark-mode .cards .card .details span,
+body.dark-mode .cards .card .name_of_town {
   background-color: var(--black);
   color: var(--bg);
   transition: 0.5s;
@@ -64,9 +81,6 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
 }
 
 .hero .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: calc(100vh - 85px);
   background-image: url(/assets/images/Background.webp);
   background-size: cover;
@@ -128,7 +142,7 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   padding-top: 95px;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .hero .container .col2 {
     display: none;
   }
@@ -138,9 +152,9 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   padding-top: 100px;
 }
 
-.plan .container span {
+.plan .container span.dream {
   font-size: 29px;
-  font-family: "Reenie Beanie", cursive;
+  font-family: 'Reenie Beanie', cursive;
   color: var(--text-color);
 }
 
@@ -155,16 +169,6 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
 .plan .container p {
   color: var(--text-color2);
   line-height: 24px;
-}
-
-.plan .container a {
-  display: block;
-  background-color: var(--text-color);
-  color: var(--white);
-  width: fit-content;
-  border-radius: 5px;
-  padding: 7px 30px;
-  margin: 20px 0;
 }
 
 .electric_bikes {
@@ -220,14 +224,12 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
 
 .cards .card .date .time span {
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
 }
 
 .cards .card .name_of_town {
   display: block;
   font-size: 20px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
   color: var(--text-color1);
   padding: 10px 0 0 20px;
 }
@@ -237,13 +239,12 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
   align-items: center;
   gap: 7px;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   padding: 10px 0 0 10px;
 }
 
 .cards .card p {
   color: var(--text-color2);
-  padding: 30px 0 30px 20px;
+  padding: 30px 20px;
 }
 
 .cards .card hr {
@@ -266,7 +267,6 @@ body.dark-mode .hero .container .col1 .how_it_work .discover a {
 
 .cards .card .details span {
   font-size: 25px;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: var(--text-color1);
 }
