@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "html.format.extraLiners": "",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "none",
+  "prettier.bracketSpacing": true
+}
