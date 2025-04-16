@@ -11,7 +11,7 @@
   --hover-border: #000;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .container {
   padding: 0 15px;
@@ -44,7 +44,7 @@ i {
   color: var(--icons);
   margin-left: 10px;
 }
-body.dark-mode ,
+body.dark-mode,
 body.dark-mode header {
   background-color: var(--black);
   transition: 0.5s;
@@ -71,7 +71,7 @@ header .container .logo img {
 header .container nav a {
   color: var(--black);
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
   header .container nav ul {
     display: none;
     position: absolute;
@@ -100,7 +100,7 @@ header .container nav a {
     border-bottom: 1px solid;
   }
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   header .container nav,
   ul {
     display: flex;
@@ -117,20 +117,19 @@ header .container nav a {
     position: relative;
   }
   header .container nav ul li a::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -2px;
     width: 0;
     height: 1.5px;
     background-color: var(--black);
-    transition:  0.3s ;
+    transition: 0.3s;
+  }
+  header .container nav ul li a::before {
+    background-color: var(--hover-border);
   }
   header .container nav ul li a:hover::before {
     width: 100%;
   }
-  
-header .container nav ul li a::before {
-  background-color: var(--hover-border);
-}
 }
