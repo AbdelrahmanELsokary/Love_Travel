@@ -1,10 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --white: #fff;
+  --black: #000;
 }
 .container {
   padding: 0 15px;
@@ -25,6 +29,42 @@ body {
     width: 1170px;
   }
 }
-a{
+a {
   text-decoration: none;
+}
+footer i {
+  color: var(--white);
+}
+footer {
+  background: url(../images/bg_footer.webp) var(--text-color1);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 100px 0;
+}
+footer .container {
+  justify-content: space-around;
+}
+footer .container h2 {
+  font-size: 40px;
+  color: var(--white);
+  line-height: 55px;
+}
+footer .container .address span {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .container .address li {
+  margin: 10px 0;
+}
+footer .container .social {
+  gap: 10px;
+}
+footer .container .contact span.contact {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .container .contact span {
+  font-size: 25px;
+  font-weight: bold;
 }

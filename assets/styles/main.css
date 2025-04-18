@@ -74,7 +74,8 @@ body.dark-mode .cards .card .details span,
 body.dark-mode .cards .card .name_of_town,
 body.dark-mode .choose_your_trip,
 body.dark-mode .choose_your_trip .details,
-body.dark-mode .choose_your_trip .container .details .info_icon span {
+body.dark-mode .choose_your_trip .container .details .info_icon span,
+body.dark-mode .experiences .container .clients .client {
   background-color: var(--black);
   color: var(--bg);
   transition: 0.5s;

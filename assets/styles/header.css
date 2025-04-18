@@ -102,7 +102,7 @@ header .container nav a {
 }
 @media (min-width: 992px) {
   header .container nav,
-  ul {
+  header .container nav ul {
     display: flex;
     align-items: center;
     gap: 33px;
