@@ -47,6 +47,9 @@ img {
 h2 {
   color: var(--text-color1);
 }
+p {
+  color: var(--text-color2);
+}
 .df {
   display: flex;
   justify-content: center;
@@ -80,6 +83,7 @@ body.dark-mode .cards .card .name_of_town {
   height: calc(100vh - 85px);
   background-image: url(/assets/images/Background.webp);
   background-size: cover;
+  flex-wrap: nowrap;
 }
 .hero .container .col1 h1 {
   font-size: 60px;
@@ -92,7 +96,7 @@ body.dark-mode .cards .card .name_of_town {
 .hero .container .col1 p {
   font-size: 19px;
   font-weight: 500;
-  color: var(--text-color2);
+
   padding: 25px 0;
 }
 .hero .container .col1 .how_it_work {
@@ -127,7 +131,7 @@ body.dark-mode .cards .card .name_of_town {
 }
 .hero .container .col2 {
   height: 100%;
-  padding-top: 95px;
+  padding-top: 136px;
 }
 @media (max-width: 991px) {
   .hero .container .col2 {
@@ -149,7 +153,6 @@ body.dark-mode .cards .card .name_of_town {
   padding: 20px 0;
 }
 .plan .container p {
-  color: var(--text-color2);
   line-height: 24px;
 }
 .electric_bikes {
@@ -202,7 +205,6 @@ body.dark-mode .cards .card .name_of_town {
   padding: 10px 0 0 10px;
 }
 .cards .card p {
-  color: var(--text-color2);
   padding: 30px 20px;
 }
 .cards .card hr {
@@ -249,7 +251,6 @@ body.dark-mode .cards .card .name_of_town {
   margin: 20px 0;
 }
 .choose_your_trip .container p {
-  color: var(--text-color2);
   margin: 20px 0;
 }
 .choose_your_trip .container .details {
@@ -287,4 +288,21 @@ body.dark-mode .cards .card .name_of_town {
   border-right: 1.5px solid var(--border);
   border-left: 1.5px solid var(--border);
   padding: 0 80px;
+}
+.next_adventure .container {
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.next_adventure .container .col1 span {
+  font-size: 30px;
+  font-family: 'Reenie Beanie', cursive;
+  color: var(--text-color);
+}
+.next_adventure .container .col1 h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 15px 0;
+}
+.next_adventure .container .col2 img {
+  width: 350px;
 }
