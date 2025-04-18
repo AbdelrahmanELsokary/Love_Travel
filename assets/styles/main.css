@@ -353,8 +353,46 @@ body.dark-mode .choose_your_trip .container .details .info_icon span {
 }
 .prand .container .logo {
   gap: 35px;
-  margin: 30px 0;
+  margin: 60px 0;
 }
 .prand .container .logo img {
   width: 200px;
+}
+.experiences {
+  background-image: linear-gradient(to left bottom, #0c0c29, #ffffff40);
+  color: var(--white);
+  padding: 40px 0;
+  margin: 40px 0;
+}
+.experiences .container h3 {
+  font-size: 50px;
+  line-height: 60px;
+  padding: 20px 0;
+}
+.experiences .container p {
+  color: var(--white);
+}
+.experiences .container .clients .client {
+  width: 640px;
+  background-color: var(--text-color);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 70px;
+}
+.experiences .container .clients .client p {
+  font-size: 25px;
+}
+.experiences .container .clients .client .info {
+  justify-content: start;
+  gap: 15px;
+  padding-top: 20px;
+}
+.experiences .container .clients .client .info span {
+  display: block;
+}
+.experiences .container .clients .client .info span.name {
+  font-weight: bold;
+}
+.experiences .container .clients .client .info span.town {
+  font-size: 14px;
 }
