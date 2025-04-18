@@ -299,12 +299,14 @@ body.dark-mode .experiences .container .clients .client {
   padding-top: 70px;
 }
 .next_adventure .container .col1 span,
-.adventure_travel .container .col2 span {
+.adventure_travel .container .col2 span,
+.discover .container .col1 span {
   font-size: 30px;
   font-family: 'Reenie Beanie', cursive;
   color: var(--text-color);
 }
-.next_adventure .container .col1 h2 {
+.next_adventure .container .col1 h2,
+.discover .container .col1 h2 {
   font-size: 50px;
   line-height: 60px;
   margin: 15px 0;
@@ -396,4 +398,10 @@ body.dark-mode .experiences .container .clients .client {
 }
 .experiences .container .clients .client .info span.town {
   font-size: 14px;
+}
+.discover .container {
+  margin: 60px auto;
+}
+.discover .container .col2 img {
+width: 520px;
 }
