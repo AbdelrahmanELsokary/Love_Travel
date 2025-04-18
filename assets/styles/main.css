@@ -290,10 +290,12 @@ body.dark-mode .cards .card .name_of_town {
   padding: 0 80px;
 }
 .next_adventure .container {
-  justify-content: space-between;
-  padding: 80px 0;
+  flex-wrap: wrap-reverse;
+  gap: 100px;
+  padding-top: 70px;
 }
-.next_adventure .container .col1 span {
+.next_adventure .container .col1 span,
+.adventure_travel .container .col2 span {
   font-size: 30px;
   font-family: 'Reenie Beanie', cursive;
   color: var(--text-color);
@@ -305,4 +307,38 @@ body.dark-mode .cards .card .name_of_town {
 }
 .next_adventure .container .col2 img {
   width: 350px;
+}
+.adventure_travel {
+  color: var(--white);
+  background-image: linear-gradient(50deg, #ffffff11, #0c0c29);
+  margin: 50px 0;
+}
+.adventure_travel .container {
+  gap: 30px;
+  padding: 70px 0;
+}
+.adventure_travel p {
+  color: var(--white);
+}
+.adventure_travel .container .col1 img {
+  width: 450px;
+}
+.adventure_travel .container .col2 span {
+  color: var(--white);
+}
+.adventure_travel .container .col2 h3 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 15px 0;
+}
+.adventure_travel .container .col2 i {
+  font-size: 15px;
+  color: var(--white);
+  padding-right: 10px;
+}
+.adventure_travel .container .col2 .check {
+  padding: 20px 0;
+}
+.adventure_travel .container hr {
+  background-color: var(--text-color2);
 }
