@@ -75,7 +75,8 @@ body.dark-mode .cards .card .name_of_town,
 body.dark-mode .choose_your_trip,
 body.dark-mode .choose_your_trip .details,
 body.dark-mode .choose_your_trip .container .details .info_icon span,
-body.dark-mode .experiences .container .clients .client {
+body.dark-mode .experiences .container .clients .client,
+body.dark-mode .packages .container .info_price {
   background-color: var(--black);
   color: var(--bg);
   transition: 0.5s;
@@ -245,11 +246,6 @@ body.dark-mode .experiences .container .clients .client {
 .choose_your_trip .container {
   text-align: center;
 }
-.choose_your_trip .container span {
-  font-size: 30px;
-  font-family: 'Reenie Beanie', cursive;
-  color: var(--text-color);
-}
 .choose_your_trip .container h2 {
   font-size: 35px;
   margin: 20px 0;
@@ -300,6 +296,8 @@ body.dark-mode .experiences .container .clients .client {
 }
 .next_adventure .container .col1 span,
 .adventure_travel .container .col2 span,
+.choose_your_trip .container span,
+.packages .container span.clear,
 .discover .container .col1 span {
   font-size: 30px;
   font-family: 'Reenie Beanie', cursive;
@@ -367,7 +365,8 @@ body.dark-mode .experiences .container .clients .client {
   padding: 40px 0;
   margin: 40px 0;
 }
-.experiences .container h3 {
+.experiences .container h3,
+.packages .container h2 {
   font-size: 50px;
   line-height: 60px;
   padding: 20px 0;
@@ -403,5 +402,54 @@ body.dark-mode .experiences .container .clients .client {
   margin: 60px auto;
 }
 .discover .container .col2 img {
-width: 520px;
+  width: 520px;
+}
+.packages .container {
+  text-align: center;
+  padding: 60px 0;
+}
+.packages .container .details_price {
+  gap: 40px;
+  margin: 60px 0;
+}
+.packages .container .info_price {
+  box-shadow: 0 0 10px 5px var(--white);
+  background-color: var(--bg2);
+  border-radius: 15px;
+  padding: 40px 50px;
+}
+.packages .container .info_price span {
+  color: var(--text-color1);
+  font-weight: bold;
+}
+.packages .container .info_price .title {
+  display: block;
+  font-size: 20px;
+  padding: 30px 0;
+}
+.packages .container .info_price span.price {
+  font-size: 80px;
+}
+.packages .container .info_price .day {
+  font-size: 20px;
+}
+.packages .container .info_price ul {
+  padding: 20px 0;
+}
+.packages .container .info_price ul li {
+  color: var(--text-color2);
+  margin: 10px 0;
+}
+.packages .container .info_price a {
+  margin: auto;
+}
+.packages .container .inclusive {
+  background-color: var(--text-color);
+}
+.packages .container .inclusive span,
+.packages .container .inclusive ul li {
+  color: var(--white);
+}
+.packages .container .inclusive a {
+  background-color: var(--text-color1);
 }
