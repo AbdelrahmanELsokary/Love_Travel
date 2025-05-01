@@ -9,6 +9,8 @@ body {
 :root {
   --white: #fff;
   --black: #000;
+  --bg-btn: #4285f4;
+  --text-color1: #181d4e;
 }
 .container {
   padding: 0 15px;
@@ -28,6 +30,22 @@ body {
   .container {
     width: 1170px;
   }
+}
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.btn {
+  display: block;
+  background-color: var(--bg-btn);
+  color: var(--white);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 20px 0;
 }
 a {
   text-decoration: none;

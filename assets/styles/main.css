@@ -365,6 +365,11 @@ body.dark-mode .packages .container .info_price {
   padding: 40px 0;
   margin: 40px 0;
 }
+@media (min-width: 1200px) {
+  .experiences .container {
+    width: 1370px;
+  }
+}
 .experiences .container h3,
 .packages .container h2 {
   font-size: 50px;
