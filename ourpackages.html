@@ -10,10 +10,11 @@
     href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" href="assets/icons/favicon/favicon.ico">
-  <link rel="stylesheet" href="assets/styles/footer.css">
-  <link rel="stylesheet" href="assets/styles/ourpackages.css">
+  <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/styles/header.css">
+  <link rel="stylesheet" href="assets/styles/footer.css">
+  <link rel="stylesheet" href="assets/styles/utils/card.css">
+  <link rel="stylesheet" href="assets/styles/ourpackages.css">
 </head>
 <body>
   <header>
@@ -39,6 +40,7 @@
     <section class="hero">
       <div class="container df">
         <h2>Our Packages</h2>
+        <a href="allpackages.html" class="btn">Show All Packages</a>
       </div>
     </section>
     <section class="select">
@@ -46,10 +48,8 @@
         <aside>
           <h3>Select your destination :</h3>
           <span>All Destinations</span>
-
           <h3>Select your date :</h3>
           <input type="date" />
-
           <h3>Typologies :</h3>
           <ul class="checkbox-list">
             <li><label><input type="checkbox" /> Sports Activities</label></li>
@@ -63,13 +63,11 @@
             <li><label><input type="checkbox" /> Beach Holidays</label></li>
             <li><label><input type="checkbox" /> Cultural Tours</label></li>
           </ul>
-
           <h3>Max Price :</h3>
           <div class="price-label">
             <input type="range" max="5000" />
           </div>
           <label><input type="checkbox" /> See only promotions</label>
-
           <h3>Durations :</h3>
           <div class="sidebar-section">
             <label><input type="checkbox" /> 1 Week</label>
@@ -77,7 +75,6 @@
             <label><input type="checkbox" /> 15 Days</label>
             <label><input type="checkbox" /> 5 Days</label>
           </div>
-
           <h3>Difficulty :</h3>
           <div class="sidebar-section">
             <label><input type="checkbox" /> Challenging</label>
@@ -85,7 +82,6 @@
             <label><input type="checkbox" /> Easy</label>
             <label><input type="checkbox" /> Medium</label>
           </div>
-
           <h3>Min Age :</h3>
           <div class="sidebar-section">
             <label><input type="radio" name="age" /> 0</label>

@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --white: #fff;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+img {
+  max-width: 100%;
+}
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  height: 50vh;
+  background-image: url(../images/bg_package.webp);
+  background-size: cover;
+  background-position: center;
+}
+.hero .container {
+  height: 100%;
+}
+.hero .container h2 {
+  color: var(--white);
+  font-size: 50px;
+}
+

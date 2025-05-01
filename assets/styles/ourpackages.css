@@ -35,6 +35,15 @@ body {
 img {
   max-width: 100%;
 }
+.btn {
+  display: block;
+  background-color: var(--text-color);
+  color: var(--white);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 20px 0;
+}
 .df {
   display: flex;
   justify-content: center;
@@ -48,11 +57,7 @@ a {
 body.dark-mode aside,
 body.dark-mode aside h3,
 body.dark-mode aside span,
-body.dark-mode aside label,
-body.dark-mode .cards .card,
-body.dark-mode .cards .card .date,
-body.dark-mode .cards .card .details span,
-body.dark-mode .cards .card .name_of_town {
+body.dark-mode aside label {
   background-color: var(--black);
   color: var(--white);
   transition: 0.5s;
@@ -65,6 +70,7 @@ body.dark-mode .cards .card .name_of_town {
 }
 .hero .container {
   height: 100%;
+  flex-direction: column;
 }
 .hero .container h2 {
   color: var(--white);
@@ -72,7 +78,6 @@ body.dark-mode .cards .card .name_of_town {
 }
 .select .container {
   padding-top: 80px;
-  flex-wrap: nowrap;
 }
 aside {
   min-width: 330px;
@@ -92,8 +97,12 @@ aside p {
   margin: 0 0 10px;
   color: #475569;
 }
-input[type='date'],
-input[type='range'] {
+body.dark-mode input[type='date'] {
+  background-color: inherit;
+  color: var(--white);
+}
+input[type='range'],
+input[type='date'] {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
@@ -129,73 +138,6 @@ label {
   gap: 4px 10px;
 }
 .cards {
+  max-width: 67%;
   margin: 80px 0;
-}
-.cards i {
-  color: var(--text-color);
-  font-size: 15px;
-}
-.cards .card {
-  max-width: 365px;
-  background-color: var(--white);
-  box-shadow: 0 0 9px 1px var(--text-color2);
-  border-radius: 17px;
-}
-.cards .card .date {
-  justify-content: space-between;
-  background-color: var(--white);
-  box-shadow: 0 0 7px 1px var(--text-color2);
-  border-radius: 5px;
-  width: 90%;
-  padding: 10px;
-  margin: 20px auto;
-}
-.cards .card .date .time,
-.info {
-  gap: 10px;
-}
-.cards .card .date .time span {
-  font-size: 14px;
-}
-.cards .card .name_of_town {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--text-color1);
-  padding: 10px 0 0 20px;
-}
-.cards .card .location {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 16px;
-  padding: 10px 0 0 10px;
-}
-.cards .card p {
-  padding: 30px 20px;
-}
-.cards .card hr {
-  width: 90%;
-  margin: 25px auto 0 auto;
-}
-.cards .card .hr {
-  margin: 0 auto;
-}
-.cards .card .details {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin: 10px auto 20px auto;
-}
-.cards .card .details span {
-  font-size: 25px;
-  font-weight: bold;
-  color: var(--text-color1);
-}
-.cards .card .details .from {
-  font-weight: normal;
-  font-size: 16px;
-  color: var(--text-color2);
 }
