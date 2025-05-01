@@ -45,6 +45,18 @@ img {
 a {
   text-decoration: none;
 }
+body.dark-mode aside,
+body.dark-mode aside h3,
+body.dark-mode aside span,
+body.dark-mode aside label,
+body.dark-mode .cards .card,
+body.dark-mode .cards .card .date,
+body.dark-mode .cards .card .details span,
+body.dark-mode .cards .card .name_of_town {
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.5s;
+}
 .hero {
   height: 50vh;
   background-image: url(../images/bg_package.webp);
@@ -60,7 +72,6 @@ a {
 }
 .select .container {
   padding-top: 80px;
-  align-items: start;
   flex-wrap: nowrap;
 }
 aside {
@@ -68,7 +79,7 @@ aside {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px var(--text-color2);
   font-size: 14px;
 }
 aside h3 {
