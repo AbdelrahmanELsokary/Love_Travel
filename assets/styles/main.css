@@ -81,7 +81,7 @@ body.dark-mode .hero {
 }
 .hero .container {
   height: calc(100vh - 85px);
-  background-image: url(../assets/images/Background.webp);
+  background-image: url(../images/Home/Background.webp);
   background-size: cover;
   flex-wrap: nowrap;
 }
