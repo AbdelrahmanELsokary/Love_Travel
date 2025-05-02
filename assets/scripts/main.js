@@ -4,8 +4,8 @@ toggleBtn.onclick = () => {
   menu.classList.toggle('open_drop_down');
 };
 
-// let form = document.getElementById('form');
-let submit = document.getElementById('submit');
+let form = document.getElementById('form');
+// let submit = document.getElementById('submit');
 function validationOfForm() {
   let name = document.getElementById('name').value.trim();
   let email = document.getElementById('email').value.trim();
@@ -14,14 +14,19 @@ function validationOfForm() {
   if (!name || !email || !message) {
     alert('Please fill all fields.');
   } else {
-    localStorage.setItem('contactName', name);
-    localStorage.setItem('contactEmail', email);
-    localStorage.setItem('contactMessage', message);
+    let users = JSON.parse(localStorage.getItem('users'));
+
+    users.push({
+      name: name,
+      email: email,
+      message: message
+    });
+    localStorage.setItem('users', JSON.stringify(users));
+
     alert('Thanks For You ');
   }
 }
 
-submit.onclick = () => {
+form.onsubmit = () => {
   validationOfForm();
-  return false;
 };
