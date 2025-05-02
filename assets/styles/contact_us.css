@@ -41,6 +41,20 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
+
+body.dark-mode .contact .container .details,
+body.dark-mode .get_in_touch .container {
+  background-color: var(--black);
+  color: var(--bg);
+  transition: 0.5s;
+}
+body.dark-mode .get_in_touch .container form input::placeholder,
+body.dark-mode .get_in_touch .container form textarea,
+body.dark-mode .get_in_touch .container p,
+body.dark-mode .get_in_touch .container {
+  background-color: var(--bg-icon);
+  color: var(--bg);
+}
 .hero {
   height: 50vh;
   background-image: url(../images/bg_contact.webp);
@@ -144,11 +158,12 @@ textarea {
   color: var(--white);
   background-color: var(--color-icon);
   letter-spacing: 0.5px;
+  border: none;
 }
 section.map iframe {
   width: 100%;
   min-height: 500px;
 }
-footer{
+footer {
   background-image: url(../images/bg_footer_contact.webp);
 }
