@@ -139,6 +139,7 @@ textarea {
   min-height: 100px;
 }
 .get_in_touch .container form input[type='submit'] {
+  cursor: pointer;
   font-weight: bold;
   color: var(--white);
   background-color: var(--color-icon);
@@ -147,4 +148,7 @@ textarea {
 section.map iframe {
   width: 100%;
   min-height: 500px;
+}
+footer{
+  background-image: url(../images/bg_footer_contact.webp);
 }
