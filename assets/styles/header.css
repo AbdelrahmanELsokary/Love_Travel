@@ -12,6 +12,7 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 .container {
   padding: 0 15px;
@@ -73,14 +74,18 @@ header .container nav a {
 }
 @media (max-width: 991px) {
   header .container nav ul {
-    display: none;
     position: absolute;
+    top: 100%;
     right: 0;
-    top: 65px;
-    min-width: 200px;
+    width: 200px;
     background-color: var(--white);
     border: 1px solid;
     border-radius: 10px;
+    transform: scaley(0);
+    transform-origin: top right;
+    transition: 0.6s;
+    opacity: 0;
+    pointer-events: none;
   }
   body.dark-mode header .container nav ul {
     background-color: var(--black);
@@ -91,7 +96,9 @@ header .container nav a {
     color: var(--white);
   }
   header .container nav ul.open_drop_down {
-    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
   }
   header .container nav ul li {
     padding: 7px 0 7px 8px;

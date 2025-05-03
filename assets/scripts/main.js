@@ -1,7 +1,18 @@
 let toggleBtn = document.getElementById('drop_down');
 let menu = document.getElementById('menu');
 toggleBtn.onclick = () => {
+  // if (menu.classList.contains('open_drop_down')) {
+  //   menu.classList.remove('open_drop_down');
+  //   toggleBtn.classList.remove('fa-xmark');
+  //   toggleBtn.classList.add('fa-bars');
+  // } else {
+  //   menu.classList.add('open_drop_down');
+  //   toggleBtn.classList.remove('fa-bars');
+  //   toggleBtn.classList.add('fa-xmark');
+  // }
   menu.classList.toggle('open_drop_down');
+  toggleBtn.classList.toggle('fa-bars');
+  toggleBtn.classList.toggle('fa-xmark');
 };
 
 let form = document.getElementById('form');
