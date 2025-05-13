@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true
     },
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 37c4625dbac33952f791327b9116b97a65be9adf
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
