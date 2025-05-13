@@ -30,7 +30,7 @@ function validationOfForm() {
     users.push({
       name: name,
       email: email,
-      message: message
+      message: message,
     });
     localStorage.setItem('users', JSON.stringify(users));
 

@@ -1,223 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOVE TRAVEL</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/styles/header.css">
-  <link rel="stylesheet" href="assets/styles/footer.css">
-  <link rel="stylesheet" href="assets/styles/utils/card.css">
-  <link rel="stylesheet" href="assets/styles/ourpackages.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="assets/images/logo.webp" alt="Logo Image"></a>
-      </div>
-      <nav>
-        <i class="fa-solid fa-bars" id="drop_down"></i>
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ourpackages.html">Travel</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-        <i class="fa-solid fa-moon" id="theme"></i>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container df">
-        <h2>Our Packages</h2>
-        <a href="allpackages.html" class="btn">Show All Packages</a>
-      </div>
-    </section>
-    <section class="select">
-      <div class="container df">
-        <aside>
-          <h3>Select your destination :</h3>
-          <span>All Destinations</span>
-          <h3>Select your date :</h3>
-          <input type="date" />
-          <h3>Typologies :</h3>
-          <ul class="checkbox-list">
-            <li><label><input type="checkbox" /> Sports Activities</label></li>
-            <li><label><input type="checkbox" /> Family-Friendly</label></li>
-            <li><label><input type="checkbox" /> Heritage Tours</label></li>
-            <li><label><input type="checkbox" /> Road Trips</label></li>
-            <li><label><input type="checkbox" /> Budget Travel</label></li>
-            <li><label><input type="checkbox" /> Culinary Tourism</label></li>
-            <li><label><input type="checkbox" /> Eco-tourism</label></li>
-            <li><label><input type="checkbox" /> Adventure Travel</label></li>
-            <li><label><input type="checkbox" /> Beach Holidays</label></li>
-            <li><label><input type="checkbox" /> Cultural Tours</label></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE TRAVEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
+    <link rel="stylesheet" href="assets/styles/utils/card.css" />
+    <link rel="stylesheet" href="assets/styles/ourpackages.css" />
+  </head>
+  <body>
+    <br />
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/logo.webp" alt="Logo Image" /></a>
+        </div>
+        <nav>
+          <i class="fa-solid fa-bars" id="drop_down"></i>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourpackages.html">Travel</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
           </ul>
-          <h3>Max Price :</h3>
-          <div class="price-label">
-            <input type="range" max="5000" />
-          </div>
-          <label><input type="checkbox" /> See only promotions</label>
-          <h3>Durations :</h3>
-          <div class="sidebar-section">
-            <label><input type="checkbox" /> 1 Week</label>
-            <label><input type="checkbox" /> 10 Days</label>
-            <label><input type="checkbox" /> 15 Days</label>
-            <label><input type="checkbox" /> 5 Days</label>
-          </div>
-          <h3>Difficulty :</h3>
-          <div class="sidebar-section">
-            <label><input type="checkbox" /> Challenging</label>
-            <label><input type="checkbox" /> Difficult</label>
-            <label><input type="checkbox" /> Easy</label>
-            <label><input type="checkbox" /> Medium</label>
-          </div>
-          <h3>Min Age :</h3>
-          <div class="sidebar-section">
-            <label><input type="radio" name="age" /> 0</label>
-            <label><input type="radio" name="age" /> 16</label>
-            <label><input type="radio" name="age" /> 18</label>
-            <label><input type="radio" name="age" /> 5</label>
-          </div>
-        </aside>
-        <div class="cards df">
-          <div class="card">
-            <img src="assets/images/Home/papackage-01.webp" alt="papackage-01 image">
-            <div class="date df">
-              <div class="time df">
-                <i class="fa-solid fa-clock"></i><span>1 Week</span>
+          <i class="fa-solid fa-moon" id="theme"></i>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container df">
+          <h2>Our Packages</h2>
+          <a href="allpackages.html" class="btn">Show All Packages</a>
+        </div>
+      </section>
+      <section class="select">
+        <div class="container df">
+          <aside>
+            <h3>Select your destination :</h3>
+            <span>All Destinations</span>
+            <h3>Select your date :</h3>
+            <input type="date" />
+            <h3>Typologies :</h3>
+            <ul class="checkbox-list">
+              <li>
+                <label><input type="checkbox" /> Sports Activities</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Family-Friendly</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Heritage Tours</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Road Trips</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Budget Travel</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Culinary Tourism</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Eco-tourism</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Adventure Travel</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Beach Holidays</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Cultural Tours</label>
+              </li>
+            </ul>
+            <h3>Max Price :</h3>
+            <div class="price-label">
+              <input type="range" max="5000" />
+            </div>
+            <label><input type="checkbox" /> See only promotions</label>
+            <h3>Durations :</h3>
+            <div class="sidebar-section">
+              <label><input type="checkbox" /> 1 Week</label>
+              <label><input type="checkbox" /> 10 Days</label>
+              <label><input type="checkbox" /> 15 Days</label>
+              <label><input type="checkbox" /> 5 Days</label>
+            </div>
+            <h3>Difficulty :</h3>
+            <div class="sidebar-section">
+              <label><input type="checkbox" /> Challenging</label>
+              <label><input type="checkbox" /> Difficult</label>
+              <label><input type="checkbox" /> Easy</label>
+              <label><input type="checkbox" /> Medium</label>
+            </div>
+            <h3>Min Age :</h3>
+            <div class="sidebar-section">
+              <label><input type="radio" name="age" /> 0</label>
+              <label><input type="radio" name="age" /> 16</label>
+              <label><input type="radio" name="age" /> 18</label>
+              <label><input type="radio" name="age" /> 5</label>
+            </div>
+          </aside>
+          <div class="cards df">
+            <div class="card">
+              <img src="assets/images/Home/papackage-01.webp" alt="papackage-01 image" />
+              <div class="date df">
+                <div class="time df"><i class="fa-solid fa-clock"></i><span>1 Week</span></div>
+                <div class="info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <img src="assets/icons/Symbol.webp" alt="" />
+                </div>
               </div>
-              <div class="info">
-                <i class="fa-solid fa-envelope"></i>
-                <img src="assets/icons/Symbol.webp" alt="">
+              <span class="name_of_town">Chiang Mai</span>
+              <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
+              <hr />
+              <p>
+                Visit the temples and the Chiang Mai<br />
+                Night Bazaar, a huge huge market located on Chiang Klan Road.
+              </p>
+              <hr class="hr" />
+              <div class="details">
+                <a href="#" class="btn">Details</a>
+                <span
+                  ><span class="from">From</span><br />
+                  $ 490</span
+                >
               </div>
             </div>
-            <span class="name_of_town">Chiang Mai</span>
-            <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
-            <hr>
-            <p>Visit the temples and the Chiang Mai<br /> Night
-              Bazaar, a huge huge market located on
-              Chiang Klan Road.</p>
-            <hr class="hr">
-            <div class="details">
-              <a href="#" class="btn">Details</a>
-              <span><span class="from">From</span><br /> $ 490</span>
-            </div>
-          </div>
-          <div class="card">
-            <img src="assets/images/Home/papackage-02.webp" alt="papackage-01 image">
-            <div class="date df">
-              <div class="time df">
-                <i class="fa-solid fa-clock"></i><span>1 Week</span>
+            <div class="card">
+              <img src="assets/images/Home/papackage-02.webp" alt="papackage-01 image" />
+              <div class="date df">
+                <div class="time df"><i class="fa-solid fa-clock"></i><span>1 Week</span></div>
+                <div class="info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <img src="assets/icons/Symbol.webp" alt="" />
+                </div>
               </div>
-              <div class="info">
-                <i class="fa-solid fa-envelope"></i>
-                <img src="assets/icons/Symbol.webp" alt="">
-              </div>
-            </div>
-            <span class="name_of_town">Chao Phraya</span>
-            <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
-            <hr>
-            <p>Boat tour in the capital of Thailand,<br /> Bangkok,
-              to see the beautiful palaces and
-              monuments from the water.</p>
-            <hr class="hr">
-            <div class="details">
-              <a href="#" class="btn">Details</a>
-              <span><span class="from">From</span><br /> $ 98 </span>
-            </div>
-          </div>
-          <div class="card">
-            <img src="assets/images/Home/papackage-03.webp" alt="papackage-01 image">
-            <div class="date df">
-              <div class="time df">
-                <i class="fa-solid fa-clock"></i><span>1 Week</span>
-              </div>
-              <div class="info">
-                <i class="fa-solid fa-envelope"></i>
-                <img src="assets/icons/Symbol.webp" alt="">
+              <span class="name_of_town">Chao Phraya</span>
+              <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
+              <hr />
+              <p>
+                Boat tour in the capital of Thailand,<br />
+                Bangkok, to see the beautiful palaces and monuments from the water.
+              </p>
+              <hr class="hr" />
+              <div class="details">
+                <a href="#" class="btn">Details</a>
+                <span
+                  ><span class="from">From</span><br />
+                  $ 98
+                </span>
               </div>
             </div>
-            <span class="name_of_town">Bangkok</span>
-            <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
-            <hr>
-            <p>Marvelous culinary and cultural trip to<br /> the
-              Thai capital with its wonderful monuments
-              and Buddha statues.</p>
-            <hr class="hr">
-            <div class="details">
-              <a href="#" class="btn">Details</a>
-              <span><span class="from">From</span><br />$ 1000 </span>
-            </div>
-          </div>
-          <div class="card">
-            <img src="assets/images/papackage-04.webp" alt="papackage-04 image">
-            <div class="date df">
-              <div class="time df">
-                <i class="fa-solid fa-clock"></i><span>15 Days</span>
+            <div class="card">
+              <img src="assets/images/Home/papackage-03.webp" alt="papackage-01 image" />
+              <div class="date df">
+                <div class="time df"><i class="fa-solid fa-clock"></i><span>1 Week</span></div>
+                <div class="info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <img src="assets/icons/Symbol.webp" alt="" />
+                </div>
               </div>
-              <div class="info">
-                <i class="fa-solid fa-envelope"></i>
-                <img src="assets/icons/Symbol.webp">
+              <span class="name_of_town">Bangkok</span>
+              <span class="location"> <i class="fa-solid fa-location-dot"></i>Thailand</span>
+              <hr />
+              <p>
+                Marvelous culinary and cultural trip to<br />
+                the Thai capital with its wonderful monuments and Buddha statues.
+              </p>
+              <hr class="hr" />
+              <div class="details">
+                <a href="#" class="btn">Details</a>
+                <span><span class="from">From</span><br />$ 1000 </span>
               </div>
             </div>
-            <span class="name_of_town">Nara</span>
-            <span class="location"> <i class="fa-solid fa-location-dot"></i>Japan</span>
-            <hr>
-            <p>Discover the incredible landmarks such <br />as the Todai-ji temple and its famous<br> Great
-              Buddha statue.</p>
-            <hr class="hr">
-            <div class="details">
-              <a href="#" class="btn">Details</a>
-              <span><span class="from">From</span><br />$ 890 </span>
+            <div class="card">
+              <img src="assets/images/papackage-04.webp" alt="papackage-04 image" />
+              <div class="date df">
+                <div class="time df"><i class="fa-solid fa-clock"></i><span>15 Days</span></div>
+                <div class="info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <img src="assets/icons/Symbol.webp" />
+                </div>
+              </div>
+              <span class="name_of_town">Nara</span>
+              <span class="location"> <i class="fa-solid fa-location-dot"></i>Japan</span>
+              <hr />
+              <p>
+                Discover the incredible landmarks such <br />as the Todai-ji temple and its famous<br />
+                Great Buddha statue.
+              </p>
+              <hr class="hr" />
+              <div class="details">
+                <a href="#" class="btn">Details</a>
+                <span><span class="from">From</span><br />$ 890 </span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container df">
+        <h2>
+          Travel beyond your <br />
+          imagination, with our <br />
+          Travel Agency!
+        </h2>
+        <div class="address">
+          <span>Address</span>
+          <ul>
+            <li>1080 Brickell Ave</li>
+            <li>Miami - Florida</li>
+            <li>U.S. of America</li>
+          </ul>
+          <ul class="social df">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <span class="contact">Contact</span>
+          <a href="#" class="btn">info@travel.com</a>
+          <span>+ 01 483 593284</span>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container df">
-      <h2>
-        Travel beyond your <br />
-        imagination, with our <br />
-        Travel Agency!
-      </h2>
-      <div class="address">
-        <span>Address</span>
-        <ul>
-          <li>1080 Brickell Ave</li>
-          <li>Miami - Florida</li>
-          <li>U.S. of America</li>
-        </ul>
-        <ul class="social df">
-          <li><i class="fa-brands fa-facebook"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-        </ul>
-      </div>
-      <div class="contact">
-        <span class="contact">Contact</span>
-        <a href="#" class="btn">info@travel.com</a>
-        <span>+ 01 483 593284</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/scripts/helpers/toggel_theme.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/scripts/libs/swiper.js"></script>
-  <script src="assets/scripts/main.js"></script>
-</body>
+    </footer>
+    <script src="assets/scripts/helpers/toggel_theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/libs/swiper.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>
